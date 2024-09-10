@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
     // 项目打开后进入的默认地址
     {
@@ -15,8 +15,8 @@ const routes: Array<RouteRecordRaw> = [
     }
 ]
 const router = createRouter({
-    history: createWebHistory(), // 本项目采用了history模式
-    // history: createWebHashHistory(), // 本项目采用了哈希模式
+    // history: createWebHistory(), // 本项目采用了history模式
+    history: createWebHashHistory(), // 本项目采用了哈希模式
     routes
 })
 export default router
